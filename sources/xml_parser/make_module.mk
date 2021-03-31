@@ -1,16 +1,14 @@
 # MANUALLY GENERATED PART
 
-LOCAL_SRC_DIR = ttslist
-MODULE_NAME = ttslist
+LOCAL_SRC_DIR = xml_parser
+MODULE_NAME = xml_parser
 
-INCLUDES = ttslist.h
+INCLUDES = xml_parser.h
 
-SRC_FILES = ttslist_constructors.c\
-	    ttslist_delete.c\
-	    ttslist_iterator.c\
-	    ttslist_operations.c\
-	    ttslist_purge.c\
-	    ttslist_tools.c
+SRC_FILES = main.c\
+	    parser_types.c\
+	    tools.c\
+	    manipulations.c
 
 # AUTO GENERATED PART
 
@@ -21,8 +19,6 @@ OBJ_FILES := $(addprefix $(OBJ_DIR)/, $(OBJ_FILES))
 INCLUDES := $(addprefix $(INC_DIR)/, $(INCLUDES))
 INCLUDE_FLAGS = $(addprefix -I , $(INC_DIR))
 GLOBAL_OBJ_FILES := $(GLOBAL_OBJ_FILES) $(OBJ_FILES)
-
-LIB9WADA_$(MODULE_NAME)_OBJECTS = $(OBJ_FILES)
 
 LIB9WADA_$(MODULE_NAME): $(OBJ_FILES)
 	@echo "COMPILED MODULE $@"
