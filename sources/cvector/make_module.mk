@@ -1,16 +1,11 @@
 # MANUALLY GENERATED PART
 
-LOCAL_SRC_DIR = ttslist
-MODULE_NAME = ttslist
+LOCAL_SRC_DIR = cvector
+MODULE_NAME = cvector
 
-INCLUDES = ttslist.h
+INCLUDES = cvector.h
 
-SRC_FILES = ttslist_constructors.c\
-	    ttslist_delete.c\
-	    ttslist_iterator.c\
-	    ttslist_operations.c\
-	    ttslist_purge.c\
-	    ttslist_tools.c
+SRC_FILES = cvector.c
 
 # AUTO GENERATED PART
 
